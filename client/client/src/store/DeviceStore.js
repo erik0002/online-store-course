@@ -1,4 +1,5 @@
 import {makeAutoObservable} from "mobx";
+//import iphone from '../asserts/iphone.jpg'
 
 export default class DeviceStore {
     constructor() {
@@ -24,10 +25,21 @@ export default class DeviceStore {
             {id: 9, name: "ACER"},
         ]
         this._devices = [
-            {id: 1, name: "Iphone 12 pro", price: 25000, rating: 5, img: "https://www.google.com/search?q=iphones&sxsrf=AOaemvK8MU32k16kJArAVevSJO_Q1FE3Xw:1634050610821&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiDms_xkMXzAhX0IMUKHUoIDuoQ_AUoAXoECAEQAw&biw=816&bih=708&dpr=1.25#imgrc=72Po9AU3NiA1gM"},
-            {id: 2, name: "Iphone 12 pro", price: 25000, rating: 5, img: "https://www.google.com/search?q=iphones&sxsrf=AOaemvK8MU32k16kJArAVevSJO_Q1FE3Xw:1634050610821&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiDms_xkMXzAhX0IMUKHUoIDuoQ_AUoAXoECAEQAw&biw=816&bih=708&dpr=1.25#imgrc=72Po9AU3NiA1gM"},
-            {id: 3, name: "Iphone 12 pro", price: 25000, rating: 5, img: "https://www.google.com/search?q=iphones&sxsrf=AOaemvK8MU32k16kJArAVevSJO_Q1FE3Xw:1634050610821&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiDms_xkMXzAhX0IMUKHUoIDuoQ_AUoAXoECAEQAw&biw=816&bih=708&dpr=1.25#imgrc=72Po9AU3NiA1gM"},
-            {id: 4, name: "Iphone 12 pro", price: 25000, rating: 5, img: "https://www.google.com/search?q=iphones&sxsrf=AOaemvK8MU32k16kJArAVevSJO_Q1FE3Xw:1634050610821&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiDms_xkMXzAhX0IMUKHUoIDuoQ_AUoAXoECAEQAw&biw=816&bih=708&dpr=1.25#imgrc=72Po9AU3NiA1gM"},
+            {id: 1, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 2, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 3, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 4, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 5, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 6, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 7, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 8, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 9, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 10, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 11, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 12, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 13, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 14, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
+            {id: 15, name: "Iphone 12 pro", price: 25000, rating: 5, img: "../asserts/iphone.jpg"},
         ]
         this._selectedType = {}
         this._selectedBrand = {}
