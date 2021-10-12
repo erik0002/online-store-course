@@ -5,7 +5,12 @@ export default class DeviceStore {
         this._types = [
             {id: 1, name: 'холодильники'},
             {id: 2, name: 'ноутбуки'},
-            {id: 3, name: 'смартфоны'}
+            {id: 3, name: 'смартфоны'},
+            {id: 4, name: 'мониторы'},
+            {id: 5, name: 'планшеты'},
+            {id: 6, name: 'пылесосы'},
+            {id: 7, name: 'стиральные машины'},
+            {id: 8, name: 'телевизоры'}
         ]
         this._brands = [
             {id: 1, name: "Apple"},
@@ -18,6 +23,7 @@ export default class DeviceStore {
             {id: 3, name: "Iphone 12 pro", price: 25000, rating: 5, img: "https://www.google.com/search?q=iphones&sxsrf=AOaemvK8MU32k16kJArAVevSJO_Q1FE3Xw:1634050610821&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiDms_xkMXzAhX0IMUKHUoIDuoQ_AUoAXoECAEQAw&biw=816&bih=708&dpr=1.25#imgrc=72Po9AU3NiA1gM"},
             {id: 4, name: "Iphone 12 pro", price: 25000, rating: 5, img: "https://www.google.com/search?q=iphones&sxsrf=AOaemvK8MU32k16kJArAVevSJO_Q1FE3Xw:1634050610821&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiDms_xkMXzAhX0IMUKHUoIDuoQ_AUoAXoECAEQAw&biw=816&bih=708&dpr=1.25#imgrc=72Po9AU3NiA1gM"},
         ]
+        this._selectedType = {}
         makeAutoObservable(this)
     }
 
@@ -30,6 +36,9 @@ export default class DeviceStore {
     setDevices(devices) {
         this._devices = devices
     }
+    setSelectedType(type){
+        this._selectedType = type
+    }
 
     get types() {
         return this._types
@@ -39,5 +48,8 @@ export default class DeviceStore {
     }
     get devices() {
         return this._devices
+    }
+    get selectedType() {
+        return this._selectedType
     }
 }
